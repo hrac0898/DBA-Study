@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=L, initial-scale=1.0" />
+		<title>Log in Page</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<main class="card" role="main" aria-labelledby="login-title">
+			<header>
+				<div class="logo" aria-hidden="true">HC</div>
+				<div>
+					<h1 id="login-title">Welcome back</h1>
+					<p class="lead">Sign in to access your portfolio dashboard.</p>
+				</div>
+			</header>
+
+			<form id="loginForm" novalidate>
+				<div class="field">
+					<label for="email">Email</label>
+					<input
+						id="email"
+						name="email"
+						type="email"
+						placeholder="name@example.com"
+						required
+					/>
+				</div>
+
+				<div class="field password-wrap">
+					<label for="password">Password</label>
+					<input
+						id="password"
+						name="password"
+						type="password"
+						placeholder="••••••••"
+						required
+						minlength="6"
+					/>
+					<button type="button" class="toggle" id="togglePassword">Show</button>
+					<div id="passwordError" class="error" style="display: none"></div>
+				</div>
+
+				<div class="row">
+					<label class="checkbox">
+						<input type="checkbox" id="remember" name="remember" />
+						Remember me
+					</label>
+					<a class="link" href="#">Forgot?</a>
+				</div>
+
+				<button class="submit" id="submitBtn" type="submit">Sign in</button>
+
+				<p class="alt">
+					Don't have an account? <a class="link" href="#">Sign up</a>
+				</p>
+			</form>
+		</main>
+	</body>
+</html>
