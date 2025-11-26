@@ -1,61 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=L, initial-scale=1.0" />
-		<title>Log in Page</title>
-		<link rel="stylesheet" href="./style.css" />
-	</head>
-	<body>
-		<main class="card" role="main" aria-labelledby="login-title">
-			<header>
-				<div class="logo" aria-hidden="true">HC</div>
-				<div>
-					<h1 id="login-title">Welcome back</h1>
-					<p class="lead">Sign in to access your portfolio dashboard.</p>
-				</div>
-			</header>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Modern Portfolio</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Harold Castro</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-			<form id="loginForm" novalidate>
-				<div class="field">
-					<label for="email">Email</label>
-					<input
-						id="email"
-						name="email"
-						type="email"
-						placeholder="name@example.com"
-						required
-					/>
-				</div>
+    <section id="hero" class="hero fade-in">
+        <img src="images/hero-img.png" alt="Hero Image" class="section-img">
+        <h1>Building Ideas Into Reality</h1>
+        <p>Technical Support Engineer turned Web Developer — turning systems knowledge into sleek, modern web apps.</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </section>
 
-				<div class="field password-wrap">
-					<label for="password">Password</label>
-					<input
-						id="password"
-						name="password"
-						type="password"
-						placeholder="••••••••"
-						required
-						minlength="6"
-					/>
-					<button type="button" class="toggle" id="togglePassword">Show</button>
-					<div id="passwordError" class="error" style="display: none"></div>
-				</div>
+    <section id="about" class="about fade-in">
+    <div class="about-content">
+        <h2>About Me</h2>
+        <p>I’m Harold Castro, an Electronics Engineering graduate turned Technical Support Engineer with 3+ years of experience. Now leveling up into Web Development and Systems Engineering — building sleek interfaces powered by real-world IT knowledge.</p>
+    </div>
 
-				<div class="row">
-					<label class="checkbox">
-						<input type="checkbox" id="remember" name="remember" />
-						Remember me
-					</label>
-					<a class="link" href="#">Forgot?</a>
-				</div>
+    <div class="about-img-wrapper">
+        <img src="./Images/Contact-image.jpg" alt="About Me Image" class="about-img">
+    </div>
+</section>
 
-				<button class="submit" id="submitBtn" type="submit">Sign in</button>
 
-				<p class="alt">
-					Don't have an account? <a class="link" href="#">Sign up</a>
-				</p>
-			</form>
-		</main>
-	</body>
+    <section id="projects" class="projects slide-up">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="images/project1.png" alt="Project 1" class="project-img">
+            <div class="project-card">
+                    <img src="images/project-placeholder.png" alt="Project Image" class="project-img">
+                <h3>Project One</h3>
+                <p>A modern landing page with responsive UI.</p>
+            </div>
+            <div class="project-card">
+                    <img src="images/project-placeholder.png" alt="Project Image" class="project-img">
+                <h3>Project Two</h3>
+                <p>Database-driven dashboard for managing data.</p>
+            </div>
+            <div class="project-card">
+                    <img src="images/project-placeholder.png" alt="Project Image" class="project-img">
+                <h3>Project Three</h3>
+                <p>System automation for client operations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills slide-up">
+        <img src="images/skills-img.png" alt="Skills Image" class="section-img">
+        <h2>Skills</h2>
+        <div class="skill-list">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>SQL</span>
+            <span>System Troubleshooting</span>
+            <span>Network Basics</span>
+        </div>
+    </section>
+
+    <section id="contact" class="contact fade-in">
+        <img src="images/contact-img.png" alt="Contact Image" class="section-img">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
 </html>
